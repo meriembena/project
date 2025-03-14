@@ -5,7 +5,7 @@ COPY src src
 COPY pom.xml .
 # on construit le projet
 RUN mvn package
-#on lance le programme construit au démarrage du conteneur
+
 CMD java -jar target/*.jar
 EXPOSE 8080
 
